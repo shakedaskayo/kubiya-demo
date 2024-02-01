@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+echo "##active_line2##"
+kind: Deployment
+echo "##active_line3##"
+metadata:
+echo "##active_line4##"
+  name: nginx-deployment
+echo "##active_line5##"
+spec:
+echo "##active_line6##"
+  selector:
+echo "##active_line7##"
+    matchLabels:
+echo "##active_line8##"
+      app: nginx
+echo "##active_line9##"
+  replicas: 2
+echo "##active_line10##"
+  template:
+echo "##active_line11##"
+    metadata:
+echo "##active_line12##"
+      labels:
+echo "##active_line13##"
+        app: nginx
+echo "##active_line14##"
+    spec:
+echo "##active_line15##"
+      containers:
+echo "##active_line16##"
+      - name: nginx
+echo "##active_line17##"
+        image: nginx:1.14.2
+echo "##active_line18##"
+        ports:
+echo "##active_line19##"
+        - containerPort: 80

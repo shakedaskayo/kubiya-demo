@@ -1,0 +1,3 @@
+name: azure-ts-appservice-docker
+runtime: nodejs
+description: Creates Azure App Service and Deploys Docker images to
